@@ -36,9 +36,10 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     let focused_monitor: String = data.get("monitor").unwrap().as_str().unwrap().to_string();
     let focused_workspace: u64 = data.get("id").unwrap().as_u64().unwrap();
-    println!("{:#?} Focus: {focused_monitor}", workspaces);
 
     let mut socket = WorkspaceSocket::from(workspaces, (focused_monitor, focused_workspace));
+    println!("{:#?}", socket);
+
     socket.listen().await?;
 
     Ok(())
