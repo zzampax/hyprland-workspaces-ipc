@@ -1,5 +1,5 @@
 [package]
-name = "hyprland-ipc"
+name = "hyprland-workspaces-ipc"
 version = "0.1.0"
 edition = "2021"
 
