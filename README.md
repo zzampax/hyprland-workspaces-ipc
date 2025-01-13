@@ -11,10 +11,10 @@ Real time utility that tracks every workspace currently in use in [Hyprland](htt
             1,
         ],
     },
-    "focused": (
+    "focused": [
         "DP-1",
         1,
-    ),
+    ],
     "socket_path": "[...]/.socket2.sock",
 }
 ```
